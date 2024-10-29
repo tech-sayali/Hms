@@ -26,4 +26,7 @@ public class UserApp {
     @Column(name = "password", nullable = false, length = 10000)
     private String password;
 
+    @Column(name = "role", nullable = false, length = 20)
+    private String role;
+
 }
