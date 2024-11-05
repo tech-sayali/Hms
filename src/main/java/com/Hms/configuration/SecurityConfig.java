@@ -25,7 +25,7 @@ public class SecurityConfig {
         http.authorizeHttpRequests().
                 requestMatchers("/api/v1/user/*")
                 .permitAll()
-                .requestMatchers("/api/v1/country").hasRole("OWNER")
+                //.requestMatchers("/api/v1/country").hasRole("OWNER")
                 .anyRequest().authenticated();
 
         return http.build();
